@@ -1,0 +1,2 @@
+export function summarize(items) { const income = items.filter(x => x.kind === 'income').reduce((s, x) => s + x.amount, 0); const expense = items.filter(x => x.kind === 'expense').reduce((s, x) => s + x.amount, 0); return { income, expense, balance: income - expense }; }
+export function csv(items) { const q = v => '"' + String(v).replace(/"/g, '""').replace(/^[=+@-]/, "'$&") + '"'; return ['Descrição,Categoria,Tipo,Valor', ...items.map(x => [x.name, x.category, x.kind, x.amount].map(q).join(','))].join('\n'); }

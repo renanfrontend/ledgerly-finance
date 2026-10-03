@@ -1,0 +1,1 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import * as d from '../src/domain.js';test('Regras de domínio e casos de borda',()=>{assert.deepEqual(d.summarize([{kind:'income',amount:100},{kind:'expense',amount:30}]),{income:100,expense:30,balance:70});assert.ok(d.csv([{name:'=SUM(1)',category:'A',kind:'expense',amount:1}]).includes("'=SUM(1)"));});
