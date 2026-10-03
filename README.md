@@ -1,5 +1,7 @@
 # Ledgerly
 
+🌐 **[Abrir demonstração / Live demo](https://renan-ledgerly-finance.renan-gabba.chatgpt.site)**
+
 Seu dinheiro, com clareza. Organize entradas e despesas, acompanhe categorias e exporte seu histórico.
 
 Projeto autoral demonstrativo preparado para o portfólio de **Renan Augusto dos Santos**. Não possui backend, autenticação ou dados de produção.
